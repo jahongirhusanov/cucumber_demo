@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/main/java/featurefile/Login.feature"},
-        glue = {"stepdfn"},
-        dryRun = true,
+        features = {"src/main/java/featurefile/PostFeature.feature"},
+        glue = {"stepdfn", "hooks"},
+//        dryRun = true,
         monochrome = true
 )
 public class Runner {
